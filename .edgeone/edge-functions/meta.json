@@ -1,0 +1,18 @@
+{
+  "conf": {
+    "headers": [],
+    "redirects": [],
+    "rewrites": [],
+    "caches": []
+  },
+  "routes": [
+    {
+      "routePath": "/helloworld1",
+      "mountPath": "/",
+      "method": "",
+      "module": [
+        "edge-functions/helloworld1/index.js:onRequest"
+      ]
+    }
+  ]
+}

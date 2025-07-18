@@ -1,0 +1,84 @@
+{
+  "routes": [
+    {
+      "routePath": "/api/[abc]/[123]/efg/hello",
+      "mountPath": "api/[abc]/[123]/efg",
+      "method": "GET,POST,PUT,DELETE",
+      "module": [
+        "api/[abc]/[123]/efg/hello:onRequest"
+      ]
+    },
+    {
+      "routePath": "/api/[abc]/hhh/[123]/efg/[default]",
+      "mountPath": "api/[abc]/hhh/[123]/efg",
+      "method": "GET,POST,PUT,DELETE",
+      "module": [
+        "api/[abc]/hhh/[123]/efg/[default]:onRequest"
+      ]
+    },
+    {
+      "routePath": "/api/[abc]/hhh/[123]/efg/hello",
+      "mountPath": "api/[abc]/hhh/[123]/efg",
+      "method": "GET,POST,PUT,DELETE",
+      "module": [
+        "api/[abc]/hhh/[123]/efg/hello:onRequest"
+      ]
+    },
+    {
+      "routePath": "/basic/hello",
+      "mountPath": "basic",
+      "method": "GET,POST,PUT,DELETE",
+      "module": [
+        "basic/hello:onRequest"
+      ]
+    },
+    {
+      "routePath": "/dynamic/[hello]",
+      "mountPath": "dynamic",
+      "method": "GET,POST,PUT,DELETE",
+      "module": [
+        "dynamic/[hello]:onRequest"
+      ]
+    },
+    {
+      "routePath": "/express2",
+      "mountPath": "express2",
+      "method": "GET,POST,PUT,DELETE",
+      "module": [
+        "express2/index:onRequest"
+      ]
+    },
+    {
+      "routePath": "/koa",
+      "mountPath": "koa",
+      "method": "GET,POST,PUT,DELETE",
+      "module": [
+        "koa/index:onRequest"
+      ]
+    },
+    {
+      "routePath": "/multiple/[[...hello]]",
+      "mountPath": "multiple",
+      "method": "GET,POST,PUT,DELETE",
+      "module": [
+        "multiple/[[...hello]]:onRequest"
+      ]
+    },
+    {
+      "routePath": "/products/transform",
+      "mountPath": "products",
+      "method": "GET,POST,PUT,DELETE",
+      "module": [
+        "products/transform:onRequest"
+      ]
+    },
+    {
+      "routePath": "/stream",
+      "mountPath": "stream",
+      "method": "GET,POST,PUT,DELETE",
+      "module": [
+        "stream/index:onRequest"
+      ]
+    }
+  ]
+}
