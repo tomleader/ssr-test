@@ -21,4 +21,5 @@ app.get('/users/:id', (req, res) => {
 app.use("/static", express.static(path.join(__dirname, "public")));
 
 // 导出处理函数
-export const onRequest = createEdgeOneHandler(app); 
+export default app;
+// export const onRequest = createEdgeOneHandler(app); 

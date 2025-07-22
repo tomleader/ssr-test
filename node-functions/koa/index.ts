@@ -3,7 +3,6 @@ import Router from '@koa/router';
 import path from 'path';
 import fs from 'fs';
 import mime from 'mime-types';
-import { createEdgeOneHandler } from '@edge-one/koa';
 
 // 创建 Koa 应用
 const app = new Koa();
@@ -53,4 +52,4 @@ app.use(router.routes());
 app.use(router.allowedMethods());
 
 // 导出处理函数
-export const onRequest = createEdgeOneHandler(app); 
+export default app;
