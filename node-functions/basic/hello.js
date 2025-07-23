@@ -9,5 +9,5 @@ async function sleep(time) {
 
 export async function onRequest(context) {
   await sleep();
-  return new Response("Hello, world!")
+  return new Response("Hello, world! in async function")
 } 
